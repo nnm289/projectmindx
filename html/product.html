@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/103d7ccca3.js"></script>
+    <link rel="stylesheet" href="../css/product.css">
+</head>
+
+<body class="">
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg sticky">
+        <div class="container-fluid">
+            <h2 class="logo">SNEAKER SOCIETY</h2>
+        </div>
+        <div class="container-fluid">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/index.html">home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/product.html">products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/store.html">stores</a>
+                </li>
+
+
+
+            </ul>
+
+        </div>
+
+    </nav>
+            <section class="showcase">
+            
+                <img src="../img/banner.jpg" alt="" class="bg">
+                <div class="overlay"></div>
+                <div class="text" style="text-align: center">
+                    <h1 class="logo">FIND WHAT YOU NEED</h1>
+                    <p>From North to South, we are everywhere.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae
+                        officia necessitatibus,
+                        nemo rerum sit
+                        rem
+                        repellat accusantium dolorum omnis, alias molestias architecto quas nam incidunt itaque
+                        dolores quam
+                        aliquid optio.</p>
+            
+                </div>
+            </section>
+<div style="margin-top: 80vh;">
+    <div class="container">
+        <header>
+            <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">LATEST PRODUCTS</h2>
+            <div class="shopping">
+                <img src="../img/shopping.svg">
+                <span class="quantity">0</span>
+            </div>
+        </header>
+<div class="input-group mb-3">
+    <input type="text" class="form-control" placeholder="Search" id="inputName">
+    <div class="input-group-append">
+        <button class="btn btn-success" type="submit" onclick="searchShoes()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+</div>
+        <div class="list">
+
+        </div>
+    </div>
+    <div class="card">
+        <h3 style="font-weight: bold; color: white; margin:50px 50px;">your cart</h3>
+        <ul class="listCard">
+        </ul>
+        <div class="checkOut">
+            <button onclick="checkOutSuccess()">
+            <span style="font-weight: bold;">check out: </span>
+            <span class="total" style="font-weight: bold;">0</span>
+            </button>
+            <div class="closeShopping">close</div>
+        </div>
+    </div>
+</div>
+    <script src="app.js"></script>
+</body>
+    <footer>
+        <div>
+            <h2 class="logo">SNEAKER SOCIETY</h2>
+        </div>
+    
+        <div>
+            <ul>
+                <li>Features</li>
+                <li>Company</li>
+                <li>Team</li>
+    
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Support center</li>
+                <li>FAQs</li>
+                <li>Policy</li>
+            </ul>
+        </div>
+        <div>
+    
+        </div>
+        <div>
+            <p>contact us at:</p>
+            <ul class="social" style="list-style-type: none; display: flex;">
+                <li style="padding-right: 20px;"><a href="https://www.facebook.com/profile.php?id=100022927309758"><i
+                            class="fa-brands fa-facebook"></i>
+                        <p></p>
+                    </a>
+                </li>
+                <li style="padding-right: 20px;"><a href="https://www.youtube.com/channel/UCUA_bES86al4Gbqj08kibaw"><i
+                            class="fa-brands fa-youtube"></i></a>
+                </li>
+                <li style="padding-right: 20px;"><a href="https://www.instagram.com/sos.nnminh/"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </li>
+            </ul>
+        </div>
+    
+    
+    
+    <script src="../js/product.js"></script>
+    </footer>
+</html>

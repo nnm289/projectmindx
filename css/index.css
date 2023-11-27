@@ -1,0 +1,354 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: large;
+}
+
+/* STYLE NAVBAR VÀ LOGO */
+.logo {
+    padding-top: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav-item {
+    padding: 15px 30px;
+    height: 80px;
+    width: 180px;
+    text-align: center;
+}
+
+.active {
+    border-bottom: solid 2px black;
+    font-weight: bolder;
+    background-color: rgb(246, 246, 246);
+}
+
+.nav-item:hover {
+    border-bottom: solid 2px black;
+    background-color: rgb(246, 246, 246);
+}
+
+/* VIDEO HEADER */
+.showcase {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 70vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.showcase.active {
+    right: 300px;
+}
+
+.showcase .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(27, 26, 26);
+    mix-blend-mode: overlay;
+}
+
+.text {
+    position: relative;
+    z-index: 3;
+    color: white;
+    text-align: left;
+}
+
+
+.shop-btn {
+    color: white;
+    z-index: 4;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background: none;
+    border: 1px solid white;
+    border-radius: 30px;
+    margin-top: 50px;
+
+}
+
+.shop-btn:hover {
+    color: black;
+    background-color: white;
+}
+
+/* CONTENT */
+.block {
+    width: 100%;
+    margin-top: 50px;
+    text-align: center;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 100px;
+
+
+}
+
+#block1  {
+    margin-top: 75vh;
+}
+
+
+
+.title {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.row {
+    margin-top: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: 150px;
+}
+
+.brand img {
+    height: 100px
+}
+
+#block2 {
+    margin-top: 70vh;
+}
+/* ATHLETE CARD */
+.deck {
+    align-items: center;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.card {
+    width: 250px;
+    height: 200px;
+    display: inline-block;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 15px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+#card1 {
+    background-image: url(../img/athlete1.webp);
+}
+
+#card2 {
+    background-image: url(../img/athlete2.webp);
+}
+
+#card3 {
+    background-image: url(../img/athlete3.webp);
+}
+
+#card4 {
+    background-image: url(../img/athlete4.webp);
+}
+#card5 {
+    background-image: url(../img/athlete5.webp);
+}
+
+#card6 {
+    background-image: url(../img/athlete6.webp);
+}
+
+#card7 {
+    background-image: url(../img/athlete7.webp);
+}
+
+#card8 {
+    background-image: url(../img/athlete8.webp);
+}
+.card-n .popup-view {
+    z-index: 2;
+    background: rgba(60, 60, 60, 0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.card-n .popup-view.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.card-n .popup-card {
+    position: relative;
+    display: flex;
+    width: 800px;
+    height: 500px;
+    margin: 20px;
+}
+
+.card-n .popup-card .product-img {
+    z-index: 2;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    height: 90%;
+    transform: translateY(25px);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-n .popup-card .product-img img {
+    z-index: 2;
+    position: relative;
+    width: 450px;
+    left: -50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.card-n .popup-card .info {
+    z-index: 2;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.card-n .popup-card .close-btn {
+    color: #111;
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.card-n .popup-card .info h3 {
+    font-size: 40px;
+    line-height: 20px;
+    margin-bottom: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.card-n .popup-card .info p {
+    font-size: 15px;
+    margin: 10px;
+    font-weight: lighter;
+}
+
+.card-n .popup-card ul{
+    list-style-type: none;
+}
+
+/*Responsive styles*/
+
+@media (max-width: 900px) {
+    .card-n .popup-card {
+        flex-direction: column;
+        width: 550px;
+        height: auto;
+    }
+
+    .card-n .popup-card .product-img {
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        transform: translateY(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .card-n .popup-card .product-img img {
+        max-width: 100%;
+
+    }
+
+    .card-n .popup-card .info {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .card-n .popup-card .info h2 {
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+    }
+
+    .card-n .popup-card .info h2 span {
+        font-size: 10px;
+    }
+
+    .card-n .popup-card .info p {
+        margin: 5px;
+        font-size: 13px;
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer div {
+    padding: 30px;
+}
+
+footer ul li:hover {
+    text-decoration: underline;
+}
